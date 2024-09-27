@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cricket Uncovered</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-img">
+      <div class="wrapper">
+        <header>
+          <nav>
+            <div class="logo">
+              <a href="#" onclick="showSection('home')">Cricket Uncovered</a>
+            </div>
+            <ul class="nav-links">
+              <li><a href="#" onclick="showSection('home')">Home</a></li>
+              <li><a href="aboutus.html" onclick="showSection('about')">About</a></li>
+              <li><a href="contact.html" onclick="showSection('contact')">Contact</a></li>
+              <li id="dashboard-link" style="display: none">
+                <a href="#" onclick="showSection('dashboard')">Dashboard</a>
+              </li>
+            </ul>
+            <div class="auth-links">
+              <a href="loginform.html" class="login" onclick="showSection('login-form')"
+                >Login</a
+              >
+              <a href="signinform.html" class="signup" onclick="showSection('signup-form')"
+                >Sign Up</a
+              >
+            </div>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <main>
+        <section class="home" id="home">
+          <div class="home-container">
+            <h2>Welcome to Cricket Uncovered</h2>
+            <p>
+              Your ultimate cricket analysis tool. Dive deep into the world of
+              cricket with our comprehensive data analysis, which identifies the
+              best players in various categories. Whether you're looking for the
+              best opener, middle-order player, all-rounder, bowler, or the
+              final 11 players who excelled throughout the tournament, Cricket
+              Uncovered provides you with detailed insights and powerful
+              visualizations powered by Power BI.
+            </p>
+            <p>
+              Our platform leverages advanced data analytics to help you uncover
+              hidden patterns and trends in cricket performances. Explore player
+              statistics, compare performances, and make informed decisions
+              based on real data.
+            </p>
+            <p>
+              Join us on a journey to explore the nuances of cricket and
+              discover what makes the best players stand out. With Cricket
+              Uncovered, you'll have access to the most up-to-date and accurate
+              cricket analysis available.
+            </p>
+          </div>
+        </section>
+        <div class="opener">
+            <label>OPENERS</label>
+            <figure>
+                <img src="OPENERS.png"  style="width:100%">
+                <figcaption>BEST OPENERS</figcaption>
+              </figure>
+
+        </div>
+        <div class="middleorder"></div>
+            <label>MIDDLE-ORDER</label>
+            <figure>
+                <img src="middleorder.png"  style="width:100%">
+                <figcaption>BEST MIDDLE-ORDER BATSMAN</figcaption>
+              </figure>
+
+        </div>
+        <div class="bowler"></div>
+            <label>BOWLER</label>
+            <figure>
+                <img src="bowler.png"  style="width:100%">
+                <figcaption>BEST BOWLER</figcaption>
+              </figure>
+
+        </div>
+        <div class="finisher"></div>
+            <label>FINISHER</label>
+            <figure>
+                <img src="finisher.png" alt="Trulli" style="width:100%">
+                <figcaption>BEST FINISHERS</figcaption>
+              </figure>
+
+        </div>
+  </body>
+</html>

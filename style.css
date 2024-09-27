@@ -1,0 +1,303 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+nav,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Basic body styling */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #273DB4 ;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.wrapper {
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+
+}
+
+header {
+  background: #050A44;
+  color: #fff;
+  padding: 15px 0;
+  
+  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+}
+
+.logo a {
+  color: #fb4141;
+  font-size: 1.625rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2); /* Makes the logo 20% bigger on hover */
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #ffc157;
+  padding: 10px 15px;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s;
+  font-weight: bolder;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #1c2ef3;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.nav-links a:hover {
+  color: #1c2ef3;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.auth-links a {
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s;
+}
+.auth-links .login{
+  background-color:  #f6ac2c;
+}
+
+.auth-links .login:hover {
+  background: #fff;
+  color: #004d40;
+}
+
+.auth-links .signup {
+  background: #273DB4;
+  color: #fff;
+}
+
+.auth-links .signup:hover {
+  background: #fff;
+  color: #004d40;
+}
+.bg-img{
+  background-image: url("cricunc.jpeg");
+  height: 38rem  ;
+  width: 100%;  
+  background-size: contain;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+
+ 
+}
+
+/* Main section styling */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.home-container{
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color:white;
+  margin-bottom: 2rem ;
+
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.dashboard {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.form-section {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #004d40;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #00332b;
+}
+
+
+label{
+  background-color: #25274d;
+  color: #fff;
+  font-size: larger;
+  align-items: center;
+  height: 5rem;
+  width: 3rem;
+  border-radius: 5rem;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+figure{
+  
+  margin-top: 3rem;
+
+}
+figcaption{
+  color: #fff;
+  text-decoration: underline;
+  margin-bottom: 3rem;
+}
+
+.about-container{
+  max-width: 1000px;
+  margin:3rem ;
+  padding: 0 20px;
+  text-align: center;
+  flex: 1;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  align-items: center;
+  margin-left: 10rem;
+}
+.about-container p{
+  font-size: 1.2rem;
+  padding: 1rem;
+  color:black
+}
+.card-container{
+  display: flex;
+  margin-left: 12.5rem;
+  margin-bottom: 3rem;
+}
+.card {
+  width: 200px;
+  background:rgb(162, 175, 255);
+  padding: .4em;
+  border-radius: 6px;
+  margin-right: 2rem;
+}
+
+.card-image {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 130px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: rgb(18, 83, 202);
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+.card-image img{
+  width: 100%;
+  height: 130px;
+
+}
